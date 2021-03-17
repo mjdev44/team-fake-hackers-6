@@ -1,7 +1,7 @@
 //It should return the result of each operation (addition, multiplication, subtraction and division)
 
 //import modules
-const { addition, multiplication } = require("./math.js");
+const { addition, multiplication, subtraction, division } = require("./math.js");
 
 //The operation should return the sum of two numbers.
 // test each addition operation is correct
@@ -22,3 +22,12 @@ test.each([[2, 5, 10],[3, 10, 30],[3, 1, 3], [10, 10, 100], [1.5 , 3, 4.5], [120
         expect(multiplication(a, b)).toBe(expected)
     }
 )
+test.each([[3, 2, 1],])
+  ("a+b=c", (a, b, expected) => {
+  expect(subtraction(a, b)).toBe(expected);
+});
+
+test.each([[6, 3, 2],])
+  ("a+b=c", (a, b, expected) => {
+  expect(division(a, b)).toBe(expected);
+});
