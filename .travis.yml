@@ -1,1 +1,7 @@
 language: node_js
+node_js:
+  - "stable"
+cache: npm
+  - echo '*** Build Start ***'
+  - npm install
+  - npm test
